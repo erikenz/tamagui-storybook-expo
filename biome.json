@@ -1,0 +1,63 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+	"files": {
+		"ignore": [
+			"**/.wrangler/**",
+			"**/tamagui.css",
+			"**/workbox*.js",
+			"**/sw*.js",
+			"**/service-worker.js",
+			"**/fallback*.js",
+			"**/node_modules/**",
+			"**/dist/**",
+			"**/build/**",
+			"**/ios/**",
+			"**/.git/**",
+			"**/.vscode/**",
+			"**/.android/**",
+			"**/.DS_Store/**",
+			"**/Thumbs.db/**",
+			"**/.tamagui*",
+			"**/.next*"
+		],
+		"ignoreUnknown": true
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab",
+		"indentWidth": 2,
+		"lineWidth": 80
+	},
+	"javascript": {
+		"formatter": {
+			"arrowParentheses": "always",
+			"bracketSameLine": true,
+			"enabled": true,
+			"indentStyle": "tab",
+			"jsxQuoteStyle": "double",
+			"lineWidth": 80,
+			"quoteStyle": "double",
+			"semicolons": "asNeeded",
+			"trailingComma": "es5"
+		}
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"security": {
+				"noDangerouslySetInnerHtml": "off"
+			},
+			"style": {
+				"useTemplate": "warn"
+			},
+			"suspicious": {
+				"noEmptyInterface": "off",
+				"noExplicitAny": "off"
+			}
+		}
+	},
+	"organizeImports": {
+		"enabled": true
+	}
+}
