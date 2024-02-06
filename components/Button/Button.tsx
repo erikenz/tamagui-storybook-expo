@@ -1,4 +1,4 @@
-// import { Button as TButton } from "tamagui"
+import { Button as TButton } from "tamagui"
 
 export type ButtonProps = {
 	text: string
@@ -6,7 +6,7 @@ export type ButtonProps = {
 }
 
 export const Button = ({ text, onPress }: ButtonProps) => {
-	// return <TButton>{text}</TButton>
+	return <TButton onPress={onPress}>{text}</TButton>
 }
 
 export type MyButtonProps = {

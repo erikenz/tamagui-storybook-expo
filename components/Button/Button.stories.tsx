@@ -2,14 +2,18 @@ import type { Meta, StoryObj } from "@storybook/react"
 
 import React from "react"
 import { View } from "react-native"
-import { MyButton as Button } from "./MyButton"
-// import { Button } from "./Button"
+// import {  Button } from "./MyButton"
+import { Button } from "./Button"
 
 const meta = {
 	title: "ui/Button",
 	component: Button,
+	argTypes: {
+		onPress: { action: "pressed the button" },
+	},
 	args: {
-		text: "Hello world!",
+		text: "Hello world!!!",
+		onPress: () => console.log("Button pressed"),
 	},
 } satisfies Meta<typeof Button>
 
