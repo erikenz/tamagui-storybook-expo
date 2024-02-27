@@ -1,13 +1,7 @@
 import { StorybookConfig } from "@storybook/react-webpack5"
-
+import { STORIES_PATHS } from "../constants"
 const config: StorybookConfig = {
-	stories: [
-		"../components/**/*.stories.mdx",
-		"../components/**/*.stories.@(js|jsx|ts|tsx)",
-		// For monorepos use the following pattern
-		// "../../../packages/ui/src/components/**/*.stories.mdx",
-		// "../../../packages/ui/src/components/**/*.stories.@(js|jsx|ts|tsx)",
-	],
+	stories: STORIES_PATHS,
 	addons: [
 		"@storybook/addon-links",
 		"@storybook/addon-essentials",

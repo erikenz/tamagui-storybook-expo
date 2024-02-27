@@ -1,7 +1,7 @@
 import { useFonts } from "expo-font"
 import React, { useEffect } from "react"
 import { useColorScheme } from "react-native"
-import { SizableText, TamaguiProvider, YStack } from "tamagui"
+import { TamaguiProvider } from "tamagui"
 import StorybookUI from "./.ondevice"
 import config from "./tamagui.config"
 
@@ -28,7 +28,6 @@ export default function App() {
 			disableInjectCSS
 			disableRootThemeClass
 			defaultTheme={scheme === "dark" ? "dark" : "light"}>
-			{/* <SizableText>Test</SizableText> */}
 			<StorybookUI />
 		</TamaguiProvider>
 	)

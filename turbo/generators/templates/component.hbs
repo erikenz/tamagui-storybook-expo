@@ -1,0 +1,14 @@
+import { SizableText, Stack } from "tamagui"
+
+export type {{ pascalCase name }}Props = {
+	children?: React.ReactNode
+}
+
+export const {{ pascalCase name }} = ({ children }: {{ pascalCase name }}Props) => {
+	return (
+		<Stack>
+			<SizableText>{{ pascalCase name }} Component</SizableText>
+			{children}
+		</Stack>
+	)
+}

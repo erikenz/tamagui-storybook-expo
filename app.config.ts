@@ -13,4 +13,5 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
 	runtimeVersion: {
 		policy: "sdkVersion",
 	},
+	plugins: ["expo-font"],
 })

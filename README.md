@@ -29,3 +29,15 @@ bun storybook:android
 # ios
 bun storybook:ios
 ```
+
+## Components
+
+### Create component
+
+```sh
+bun gen
+```
+
+### Modify components path
+
+The paths for components is in [constants](./constants.ts)
